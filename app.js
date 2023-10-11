@@ -22,5 +22,9 @@ app.use(express.static(path.join(__dirname, "public")));
 
 app.use("/", indexRouter);
 app.use("/users", usersRouter);
+app.use("/courses", courseRouter);
+app.use("/media", mediaRouter);
+app.use("/orders", orderRouter);
+app.use("/payments", paymentRouter);
 
 module.exports = app;
